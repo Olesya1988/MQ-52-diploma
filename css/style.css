@@ -1,0 +1,1242 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/fonts/OpenSans-Regular.woff");
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/fonts/OpenSans-Bold.woff");
+}
+
+header {
+    position: relative;
+
+    flex-grow: 1;
+    height: 28rem;
+
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/banner-bg.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    z-index: 0;
+
+    text-transform: uppercase;   
+}
+
+header::before {
+    content: '';
+
+    position: absolute;
+
+    width: 100%;
+    height: 28rem;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    z-index: 1;    
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1170px;
+
+    margin-top: 28px;
+    height: 41px;
+
+    z-index: 1;
+}
+
+.logo {    
+    width: 11.19rem;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.menu-list {
+    display: flex;
+    gap: 2.19rem;
+
+    font-family: OpenSans-Regular;
+    color: #ffffff;
+    font-size: 0.81rem;    
+}
+
+.menu-item {
+    color: inherit;
+    text-decoration: none;  
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+.menu-button {
+    display: none;
+}
+
+.intro {
+    max-width: 687px;
+    min-height: 107px;
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+
+    padding-top: 100px;
+
+    z-index: 1;
+}
+
+.intro-title {
+    font-family: OpenSans-Bold;
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 1.7;    
+    text-align: center;    
+}
+
+.trends {
+    width: 100%;   
+}
+
+.trends-header {
+    position: relative;
+
+    height: 124px;
+    padding-top: 57px;
+
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+    font-size: 20px;
+    text-align: center;    
+}
+
+.trends-header::after {
+    content: '';
+
+    display: block;
+
+    position: absolute;
+
+    width: 80px;
+    height: 4px;
+    left: 47%;
+    top: 75%;
+
+    background-color: #e1d9bd;
+}
+
+.trend-list {
+    display: flex;
+    justify-content: space-between; 
+
+    text-transform: uppercase;
+    min-height: 317px;
+}
+
+.trend {
+    width: 25%;
+    min-height: 317px;
+    
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    margin-bottom: 3px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    position: relative;
+
+    z-index: 0;    
+}
+
+.trend::after {
+    content: '';
+
+    position: absolute;
+
+    width: 100%;
+    min-height: 317px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 1;
+}
+
+.trend-garden {
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/trend1.jpg");
+}
+
+.trend-cheese {
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/trend2.jpg");
+}
+
+.trend-hike {
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/trend3.jpg");
+}
+
+.trend-lemons {
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/trend4.jpg");
+}
+
+.trend-intro {
+    box-sizing: content-box;
+    padding: 30px 25px 25px;
+    border: 3px solid #b59f5b;
+
+    z-index: 2;
+
+    font-size: 20px;
+    font-family: OpenSans-Bold;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    max-width: 75%;
+    margin-bottom: 5%;
+}
+
+.trend-teg-item:hover {
+    text-decoration: underline;
+}
+
+.trend-title {
+    color: #ffff;
+    text-decoration: none;    
+}
+
+.trend-title:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1170px;
+    min-height: 1776px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 63px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-list { 
+    width: 67%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article {
+    width: 100%;
+    min-height: 18.38rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-img {
+    width: 48.5%;
+    min-height: 18.38rem;
+
+    object-fit: cover;
+    object-position: top left;
+}
+
+.article-content {
+    width: 47.7%;
+    height: 18.38rem;    
+}
+
+.article-category {
+    height: 1.625rem;   
+}
+
+.article-category-list, .trend-teg {
+    display: flex; 
+    gap: 1.16rem;
+}
+
+.article-category-item, .trend-teg-item {
+    font-family: OpenSans-Bold;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #b59f5b;
+    text-transform: uppercase;
+}
+
+.article-category-item:hover {
+    text-decoration: underline;
+    text-shadow: #b59f5b -0.3px 0;
+}
+
+.article-title {
+    height: 33px;
+    line-height: 1;
+    
+    padding-right: 10%;
+}
+
+.break {
+    margin-top: 1.5%;
+}
+
+.article-caption {
+    font-family: OpenSans-Bold;
+    font-size:1.25rem;
+    color: #0f0d0e;
+    text-transform: uppercase;
+    text-decoration: none;    
+}
+
+.article-caption:hover {
+    text-shadow: 0.2px 0 0.2px #000, 
+    0 0.2px 0.2px #000, 
+    -0.2px 0 0.2px #000, 
+    0 -0.2px 0.2px #000;
+}
+
+.article-about {
+    height: 6.19rem;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.article-date {
+    font-family: OpenSans-Regular;
+    font-size: 0.75rem;
+    color: #888888;
+}
+
+.article-author {
+    font-family: OpenSans-Bold;
+    font-size: 0.75rem;
+    color: #000000;
+
+    margin-left: 0,8125rem;
+}
+
+.article-text {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #0f0d0e;
+    line-height: 1.5;
+
+    padding-top: 1%;
+    padding-right: 2%;    
+}
+
+aside {
+    width: 23%;  
+
+    display: flex;
+    flex-direction: column;    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+}
+
+.section-title {
+    text-decoration: none;
+    color: #0f0d0e;
+    font-size: 14px;
+}
+
+.section-title:hover {
+    font-size: 0,89rem;
+}
+
+h3 {
+    position: relative;
+
+    font-family: OpenSans-Bold;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+h3::after {
+    position: absolute;
+
+    content: '';
+
+    border-bottom: 0.25rem solid #b59f5b;
+
+    width: 25%;
+    top: 145%;
+    left: 38%;
+
+    opacity: 40%;
+}
+
+.last-posts {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1.31rem;
+}
+
+.last-posts:first-child {
+    margin-top: 2.5rem;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-img {
+    width: 70.5px;
+    height: 70px;
+
+    object-fit: cover;
+    object-position: top left;
+}
+
+.post-content {
+    width: 183px;
+
+    margin-top: -4px;
+    margin-left: -3px;
+}
+
+.post-date {
+    font-family: OpenSans-Regular;
+    font-size: 12px;
+    color: #000000;
+
+    opacity: 54%;
+}
+
+.post-title {
+    font-family: OpenSans-Bold;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.post-title:hover {
+    text-shadow: 0.2px 0 0.2px #000, 
+    0 0.2px 0.2px #000, 
+    -0.2px 0 0.2px #000, 
+    0 -0.2px 0.2px #000;
+}
+
+.search {
+    margin-top: 60px;
+    height: 100px;
+}
+
+.search-group {
+    display: flex;
+}
+
+.search-field {
+    border: none;
+
+    width: 223px;
+    height: 49px;
+
+    padding: 10px 19px;
+
+    display: inline-block;
+    vertical-align: middle;
+    
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+    color: #000000;
+
+    opacity: 0.54;    
+    
+    background-color: #f4f7f6;    
+}
+  
+.search-field:focus {
+    outline: 1px solid #b59f5b;     
+}
+
+.search-button {
+    position: relative;
+    width: 49px;
+    height: 49px;
+
+    cursor: pointer;      
+
+    visibility: hidden;      
+}
+
+.search-button::after {
+    position: absolute;
+    
+    content: '';
+      
+    width: 49px;
+    height: 49px;
+
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/search.svg");
+    background-color: #b59f5b;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
+      
+    margin-top: -17px;
+    margin-left: -44px;
+      
+    visibility: visible;    
+}
+
+.search-button:hover::after {
+    background-color: #cdb262;
+}
+
+.sub {
+    margin-top: 34px;
+    height: 160px;
+}
+
+.sub-group {
+    display: block;
+}
+
+.sub-field {
+    width: 100%;
+    height: 49px;
+    
+    border: none;
+
+    padding: 10px 19px;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    background-color: #f4f7f6;
+}
+
+.sub-field:focus {
+    outline: 1px solid #b59f5b;     
+}
+
+.sub-button {
+    width: 100%;
+    height: 49px;
+    
+    font-family: OpenSans-Bold;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    background-color: #b59f5b;
+    border: none;
+
+    margin-top: 18px;
+}
+
+.sub-button:hover {
+    background-color: #cdb262;
+    border: 1px solid #cdb262;
+    cursor: pointer;
+}
+
+.tegs-group {
+    margin-top: 38px;
+    height: 145px;
+
+}
+
+.tegs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teg {
+    font-family: OpenSans-Bold;
+    color: #0f0d0e;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: 3px solid #eeeeee;
+
+    height: 30px;
+    
+    padding: 3px 14px;   
+
+    margin-right: 4.5px;
+    margin-bottom: 4.5px;
+}
+
+.teg:hover {
+    outline: 3px solid #b59f5b;
+    border: none;
+
+}
+
+.themes-group {
+    margin-top: 20px;
+}
+
+.themes {
+    display: block;  
+}
+
+.theme {
+    width: 100%;
+    height: 47.5px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    font-family: OpenSans-Bold;
+    color: #000000;
+    font-size: 14px;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    position: relative;
+}
+
+.theme-first::after {
+    content: '12';
+
+    font-family: OpenSans-Bold;
+    color: #b59f5b;
+    font-size: 12px;
+    
+    margin-left: 5px;
+
+    position: absolute;
+}
+
+.theme-second::after {
+    content: '4';
+
+    font-family: OpenSans-Bold;
+    color: #b59f5b;
+    font-size: 12px;
+    
+    margin-left: 5px;
+    
+    position: absolute;
+}
+
+.theme-third::after {
+    content: '145';
+    
+    font-family: OpenSans-Bold;
+    color: #b59f5b;
+    font-size: 12px;
+    
+    margin-left: 5px;
+    
+    position: absolute;
+}
+
+.theme-fourth::after {
+    content: '28';
+    
+    font-family: OpenSans-Bold;
+    color: #b59f5b;
+    font-size: 12px;
+    
+    margin-left: 5px;
+    
+    position: absolute;
+}
+
+.theme-fifth::after {
+    content: '62';
+
+    font-family: OpenSans-Bold;
+    color: #b59f5b;    
+    font-size: 12px;
+
+    margin-left: 5px;
+
+    position: absolute;
+}
+
+.theme-sixth::after {
+    content: '8';
+    
+    font-family: OpenSans-Bold;
+    color: #b59f5b;
+    font-size: 12px;
+    
+    margin-left: 5px;
+    
+    position: absolute;
+}
+
+.shop {
+    max-width: 1170px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.shop-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+    font-size: 20px;
+
+    padding-top: 60px;
+    padding-bottom: 21px;
+
+    position: relative;
+}
+
+.shop-header::after {
+    content: '';
+
+    display: block;
+
+    position: absolute;
+
+    width: 70px;
+    height: 4px;
+
+    left: 46%;
+    top: 87%;
+
+    background-color: #e1d9bd;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 3.33%;    
+}
+
+.product-card {
+    width: 30%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-pic {
+    z-index: 0;
+
+    position: relative;
+
+    width: 300px;
+}
+
+.product-description {
+    border: 3px solid #c2b78d;
+    padding: 45px 20px 10px 15px;
+    margin: -30px -16px 10px -16px;
+
+    z-index: 1;
+
+    position: relative;
+
+    min-height: 265px;
+}
+
+.product-title {
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+    font-size: 20px;
+
+    margin-bottom: 3px;
+}
+
+.product-about {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.product-about:hover {
+    text-shadow: 0.2px 0 0.2px #000, 
+    0 0.2px 0.2px #000, 
+    -0.2px 0 0.2px #000, 
+    0 -0.2px 0.2px #000;
+}
+
+.product-link {
+    color: #b59f5b;
+    text-decoration: none;
+}
+
+.product-link:hover {
+    text-decoration: underline;
+}
+
+.product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-family: OpenSans-Bold;
+    font-size: 14px;
+}
+
+.new-price {
+    font-family: OpenSans-Bold;
+    font-size: 20px;
+}
+
+.to-shop {
+    width: 142px;
+    height: 47px;
+
+    background-color: #b59f5b;
+
+    padding: 10px;
+    border: none;
+    margin: 0;
+
+    color: #ffff;
+    
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.to-shop:hover {
+    border-top: 1px solid #b59f5b;
+}
+
+.footer {
+    width: 1170px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-color: #f4f7f6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    margin-top: 35px;
+}
+
+.social-media {
+    display: flex;
+    gap: 27px;
+}
+
+.social-icon {
+    display: block;
+
+    width: 21px;
+    height: 21px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+.social-icon__twitter {
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/001-dribbble.svg");
+    
+    margin-left: 0;
+}
+
+.social-icon__pinterest {
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/001-pinterest.svg");
+}
+
+.social-icon__tumblr {
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/003-tumblr.svg");
+}
+
+.copyright {
+    margin-top: 69px;
+    margin-bottom: 60px;
+
+    width: 1170px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright-text {
+    font-family: OpenSans-Bold;
+    color: #999999;
+    font-size: 12px;
+}
+
+.popup {
+    position: fixed;
+
+    top: 239px;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup-box {
+    background-color: #ffff;
+
+    width: 390px;
+    height: 588px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 54px 30px;    
+}
+
+.popup-header {
+    font-family: OpenSans-Bold;
+    font-size: 20px;
+
+    position: relative;
+}
+
+.popup-header::after {
+    content: '';
+
+    display: block;
+
+    position: absolute;
+
+    width: 70px;
+
+    font-size: 4px;
+
+    top: 150%;
+    margin-left: -20px;
+
+    background-color: #e1d9bd;
+}
+
+.question {
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.frequency {
+    width: 100%;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/form-arrows.svg");
+    background-size: 12px 20px;
+    background-position: top 12.5px right 12.5px;
+    background-repeat: no-repeat;
+    background-color: #f4f7f6;
+
+    height: 45px;
+
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.radio {
+    display: none;
+}
+
+.radio-text {
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+
+    margin-right: 20px;    
+}
+
+.radio-text::before {
+    content: '';
+
+    display: inline-block;
+
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+
+    vertical-align: middle;
+}
+
+.radio:checked ~ .radio-text::before {
+    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/form-circle.svg");
+}
+
+.content-answer {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 132px;
+    min-height: 132px;
+
+    background-color: #f4f7f6;
+
+    border: none;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+}
+
+.content-answer:focus {
+    border: 1px solid #b59f5b;
+}
+
+.feedback-button {
+    width: 100%;
+    height: 45px;
+
+    background-color: #b59f5b;
+
+    padding: 10px;
+    border: none;
+
+    color: #ffff;
+
+    margin: 0;
+
+    text-transform: uppercase;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+
+    font-size: 30px;
+
+    margin-top: -40px;
+    margin-right: -370px;
+
+    color: #ffff;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+    header {
+        background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/banner-bg-tablet.jpg");
+    }    
+
+    .menu {
+        width: 100%;
+        margin-top: 43px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .intro {
+        max-width: 650px;
+    }
+
+    .intro-title {
+        font-size: 40px;
+    }
+
+    .menu-list {    
+        display: none;
+    }
+
+    .menu-toggle {
+        opacity: 0;
+    }
+    
+    .menu-button {
+        display: block;
+
+        width: 30px;
+        height: 15px;
+
+        cursor: pointer;
+
+        border-top: 5px solid #ffff;
+        border-bottom: 5px solid #ffff;
+
+        position: relative;    
+    }
+
+    .menu-button::after {
+        content: '';
+
+        display: block;
+
+        position: absolute;
+
+        width: 30px;
+        height: 5px;
+
+        background-color: #ffff; 
+    }
+
+    .trend-list {
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        width: 50%;
+    }
+
+    main {
+        width: 100%;
+        padding: 50px 35px;
+    }
+
+    .post-list {
+        width: 57%;
+    }
+
+    aside {
+        width: 272px;
+    }
+
+    .article {
+        flex-direction: column;
+        border-bottom: 5px solid #eeeeee;
+    }
+
+    .article:nth-child(n+2) {
+        margin-top: 50px;
+    }
+
+    .article:last-child {
+        border-bottom: none;
+    }    
+
+    .article-img {
+        width: 100%;
+    }
+
+    .article-content {
+        width: 100%;
+    }
+
+    .article-category {
+        margin-top: 10px;
+    }
+
+    .shop-header {
+        padding-top: 0;
+    }
+
+    .trend-intro {
+        font-size: 17px;
+    }
+
+    .article-category-item, .trend-teg-item {
+        font-size: 14px;
+
+    }
+
+    .article-caption {
+        font-size: 17px;
+    }
+
+    .article-text {
+        font-size: 15px;
+    }
+
+    .shop-header {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 14px;
+    }
+
+    .shop {
+        width: 100%;
+        padding: 0px 35px;
+    }
+
+    .products {
+        flex-wrap: wrap;
+    }
+
+    .product-card {
+        width: 48.3%;
+    }
+
+    .product-pic {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 35px;
+    }
+
+    .copyright {
+        width: 100%;
+    }    
+}
