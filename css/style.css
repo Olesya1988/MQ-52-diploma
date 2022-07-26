@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: OpenSans-Regular;
-    src: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/fonts/OpenSans-Regular.woff");
+    src: url("../fonts/OpenSans-Regular.woff");
 }
 
 @font-face {
     font-family: OpenSans-Bold;
-    src: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/fonts/OpenSans-Bold.woff");
+    src: url("../fonts/OpenSans-Bold.woff");
 }
 
 header {
@@ -21,7 +21,7 @@ header {
     flex-grow: 1;
     height: 28rem;
 
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/banner-bg.jpg");
+    background-image: url("../images/banner-bg.jpg");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,19 +190,19 @@ header::before {
 }
 
 .trend-garden {
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/trend1.jpg");
+    background-image: url("../images/trend1.jpg");
 }
 
 .trend-cheese {
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/trend2.jpg");
+    background-image: url("../images/trend2.jpg");
 }
 
 .trend-hike {
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/trend3.jpg");
+    background-image: url("../images/trend3.jpg");
 }
 
 .trend-lemons {
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/trend4.jpg");
+    background-image: url("../images/trend4.jpg");
 }
 
 .trend-intro {
@@ -511,7 +511,7 @@ h3::after {
     width: 49px;
     height: 49px;
 
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/search.svg");
+    background-image: url("../svg/search.svg");
     background-color: #b59f5b;
     background-repeat: no-repeat;
     background-size: 40%;
@@ -887,17 +887,17 @@ h3::after {
 }
 
 .social-icon__twitter {
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/001-dribbble.svg");
+    background-image: url("../svg/001-dribbble.svg");
     
     margin-left: 0;
 }
 
 .social-icon__pinterest {
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/001-pinterest.svg");
+    background-image: url("../svg/001-pinterest.svg");
 }
 
 .social-icon__tumblr {
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/003-tumblr.svg");
+    background-image: url("../svg/003-tumblr.svg");
 }
 
 .copyright {
@@ -987,7 +987,7 @@ h3::after {
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/form-arrows.svg");
+    background-image: url("../svg/form-arrows.svg");
     background-size: 12px 20px;
     background-position: top 12.5px right 12.5px;
     background-repeat: no-repeat;
@@ -1019,7 +1019,7 @@ h3::after {
 
     display: inline-block;
 
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/form-empty-circle.svg");
+    background-image: url("../svg/form-empty-circle.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -1031,7 +1031,7 @@ h3::after {
 }
 
 .radio:checked ~ .radio-text::before {
-    background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/svg/form-circle.svg");
+    background-image: url("../svg/form-circle.svg");
 }
 
 .content-answer {
@@ -1086,7 +1086,7 @@ h3::after {
 
 @media (min-width: 641px) and (max-width: 1200px) {
     header {
-        background-image: url("C:/Users/User/Documents/Нетология/Работы/Адаптивная и мобильная верстка/Диплом/images/banner-bg-tablet.jpg");
+        background-image: url("../images/banner-bg-tablet.jpg");
     }    
 
     .menu {
