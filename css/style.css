@@ -1126,16 +1126,11 @@
 
     .content {
         width: 100%;
-        padding: 50px 35px;
+        padding: 50px 35px 0;
     }
 
     .post-list {
         max-width: 56%;
-    }
-
-    .aside {
-        width: 272px;
-        flex-shrink: 1;
     }
 
     .article {
@@ -1176,11 +1171,7 @@
         margin-top: -2%;
     }
 
-    .trend-intro {
-        font-size: 17px;
-    }
-
-    .article-category-item, .trend-teg-item {
+    .article-category-item {
         font-size: 14px;
     }
 
@@ -1190,6 +1181,10 @@
 
     .article-text {
         font-size: 15px;
+    }
+
+    .aside {
+        width: 272px;
     }
 
     .section-title {
@@ -1204,7 +1199,6 @@
     .shop-header {
         padding-top: 0;
         font-size: 18px;
-        margin-top: -50px;
     }
 
     .shop-header::after {
@@ -1245,9 +1239,5 @@
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape){
     .trend-list {
         flex-wrap: nowrap;
-    }
-
-    .trend {
-        width: 25%;
     }
 }
