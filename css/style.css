@@ -15,11 +15,12 @@
     src: url("../fonts/OpenSans-Bold.woff");
 }
 
-header {
+.header {
     position: relative;
 
-    flex-grow: 1;
+    width: 100%;
     height: 28rem;
+    padding-top: 28px;
 
     background-image: url("../images/banner-bg.jpg");
     background-position: top left;
@@ -35,13 +36,14 @@ header {
     text-transform: uppercase;   
 }
 
-header::before {
+.header::before {
     content: '';
 
     position: absolute;
 
     width: 100%;
     height: 28rem;
+    margin-top: -28px;
 
     background-color: rgba(0, 0, 0, 0.6);
     background-position: top left;
@@ -58,9 +60,6 @@ header::before {
 
     width: 1170px;
 
-    margin-top: 28px;
-    height: 41px;
-
     z-index: 1;
 }
 
@@ -74,19 +73,22 @@ header::before {
 
 .menu-list {
     display: flex;
-    gap: 2.19rem;
 
     font-family: OpenSans-Regular;
     color: #ffffff;
-    font-size: 0.81rem;    
+    font-size: 13px;
 }
 
-.menu-item {
+.menu-item:nth-child(n+2) {
+    margin-left: 35px;
+}
+
+.menu-link {
     color: inherit;
     text-decoration: none;  
 }
 
-.menu-item:hover {
+.menu-link:hover {
     text-decoration: underline;
 }
 
@@ -96,13 +98,8 @@ header::before {
 
 .intro {
     max-width: 687px;
-    min-height: 107px;
 
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-
-    padding-top: 100px;
+    margin-top: 100px;
 
     z-index: 1;
 }
@@ -138,9 +135,9 @@ header::before {
 
     position: absolute;
 
-    width: 80px;
-    height: 4px;
-    left: 47%;
+    width: 4%;
+    height: 3px;
+    left: 48%;
     top: 75%;
 
     background-color: #e1d9bd;
@@ -148,6 +145,7 @@ header::before {
 
 .trend-list {
     display: flex;
+    gap: 0.2%;
     justify-content: space-between; 
 
     text-transform: uppercase;
@@ -155,8 +153,8 @@ header::before {
 }
 
 .trend {
-    width: 25%;
-    min-height: 317px;
+    width: 24.85%;
+    height: 317px;
     
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -179,7 +177,7 @@ header::before {
     position: absolute;
 
     width: 100%;
-    min-height: 317px;
+    height: 317px;
 
     background-color: rgba(0, 0, 0, 0.6);
     background-position: top left;
@@ -207,7 +205,7 @@ header::before {
 
 .trend-intro {
     box-sizing: content-box;
-    padding: 30px 25px 25px;
+    padding: 25px 27px 30px;
     border: 3px solid #b59f5b;
 
     z-index: 2;
@@ -220,7 +218,11 @@ header::before {
     justify-content: space-between;
     
     max-width: 75%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
+}
+
+.trend-teg {
+    margin-bottom: 5px;
 }
 
 .trend-teg-item:hover {
@@ -228,15 +230,20 @@ header::before {
 }
 
 .trend-title {
-    color: #ffff;
-    text-decoration: none;    
+    line-height: 1;
 }
 
-.trend-title:hover {
+.trend-title-link {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 20px;       
+}
+
+.trend-title-link:hover {
     text-decoration: underline;
 }
 
-main {
+.content {
     max-width: 1170px;
     min-height: 1776px;
 
@@ -250,11 +257,7 @@ main {
 }
 
 .post-list { 
-    width: 67%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 67%;
 }
 
 .article {
@@ -263,6 +266,7 @@ main {
 
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 .article-img {
@@ -274,12 +278,11 @@ main {
 }
 
 .article-content {
-    width: 47.7%;
-    height: 18.38rem;    
+    margin-left: 30px;       
 }
 
 .article-category {
-    height: 1.625rem;   
+    margin-bottom: 2px;
 }
 
 .article-category-list, .trend-teg {
@@ -301,10 +304,8 @@ main {
 }
 
 .article-title {
-    height: 33px;
     line-height: 1;
-    
-    padding-right: 10%;
+    margin-bottom: 30px;
 }
 
 .break {
@@ -327,11 +328,10 @@ main {
 }
 
 .article-about {
-    height: 6.19rem;
-
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 12px;
+    margin-bottom: 45px;
 }
 
 .article-date {
@@ -344,45 +344,34 @@ main {
     font-family: OpenSans-Bold;
     font-size: 0.75rem;
     color: #000000;
-
-    margin-left: 0,8125rem;
 }
 
 .article-text {
     font-family: OpenSans-Regular;
     font-size: 15px;
     color: #0f0d0e;
-    line-height: 1.5;
-
-    padding-top: 1%;
-    padding-right: 2%;    
+    line-height: 1.5; 
 }
 
-aside {
-    width: 23%;  
-
-    display: flex;
-    flex-direction: column;    
+.aside {
+    width: 23%; 
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 10px;
+.section {
+    margin-bottom: 5px;
 }
 
-.section-title {
+.section-link {
     text-decoration: none;
     color: #0f0d0e;
     font-size: 14px;
 }
 
-.section-title:hover {
+.section-link:hover {
     font-size: 0,89rem;
 }
 
-h3 {
+.section-title {
     position: relative;
 
     font-family: OpenSans-Bold;
@@ -392,12 +381,12 @@ h3 {
     text-align: center;
 }
 
-h3::after {
+.section-title::after {
     position: absolute;
 
     content: '';
 
-    border-bottom: 0.25rem solid #b59f5b;
+    border-bottom: 3px solid #b59f5b;
 
     width: 25%;
     top: 145%;
@@ -406,20 +395,14 @@ h3::after {
     opacity: 40%;
 }
 
-.last-posts {
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 1.31rem;
-}
-
 .last-posts:first-child {
-    margin-top: 2.5rem;
+    margin-top: 38px;
 }
 
 .post {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 22px;
+    line-height: 1;
 }
 
 .post-img {
@@ -431,10 +414,7 @@ h3::after {
 }
 
 .post-content {
-    width: 183px;
-
-    margin-top: -4px;
-    margin-left: -3px;
+    margin-left: 17px;
 }
 
 .post-date {
@@ -488,6 +468,10 @@ h3::after {
     
     background-color: #f4f7f6;    
 }
+
+.search-field-text {
+    display: none;
+}
   
 .search-field:focus {
     outline: 1px solid #b59f5b;     
@@ -527,9 +511,16 @@ h3::after {
     background-color: #cdb262;
 }
 
+.search-button-text {
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+    color: #000000;
+}
+
 .sub {
     margin-top: 34px;
     height: 160px;
+    margin-bottom: 10px;
 }
 
 .sub-group {
@@ -554,14 +545,13 @@ h3::after {
     outline: 1px solid #b59f5b;     
 }
 
+.sub-field-text {
+    display: none;
+}
+
 .sub-button {
     width: 100%;
-    height: 49px;
-    
-    font-family: OpenSans-Bold;
-    color: #ffffff;
-    font-size: 14px;
-    text-transform: uppercase;
+    height: 49px;    
 
     background-color: #b59f5b;
     border: none;
@@ -575,10 +565,17 @@ h3::after {
     cursor: pointer;
 }
 
+.sub-button-text {
+    font-family: OpenSans-Bold;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
 .tegs-group {
     margin-top: 38px;
     height: 145px;
-
+    margin-bottom: 15px;
 }
 
 .tegs {
@@ -587,26 +584,25 @@ h3::after {
 }
 
 .teg {
-    font-family: OpenSans-Bold;
-    color: #0f0d0e;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-
     border: 3px solid #eeeeee;
-
-    height: 30px;
     
-    padding: 3px 14px;   
+    padding: 3px 13px;   
 
     margin-right: 4.5px;
     margin-bottom: 4.5px;
 }
 
+.teg-link {
+    font-family: OpenSans-Bold;
+    color: #0f0d0e;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;    
+}
+
 .teg:hover {
     outline: 3px solid #b59f5b;
     border: none;
-
 }
 
 .themes-group {
@@ -619,99 +615,36 @@ h3::after {
 
 .theme {
     width: 100%;
-    height: 47.5px;
 
-    border-bottom: 1px solid #eeeeee;
-
-    font-family: OpenSans-Bold;
-    color: #000000;
-    font-size: 14px;
+    border-bottom: 1px solid #eeeeee;    
     
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 
     position: relative;
 }
 
-.theme-first::after {
-    content: '12';
+.theme-text {
+    font-family: OpenSans-Bold;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 5px;
+}
 
+.theme-number {
+    vertical-align: top;
     font-family: OpenSans-Bold;
     color: #b59f5b;
     font-size: 12px;
-    
-    margin-left: 5px;
-
-    position: absolute;
-}
-
-.theme-second::after {
-    content: '4';
-
-    font-family: OpenSans-Bold;
-    color: #b59f5b;
-    font-size: 12px;
-    
-    margin-left: 5px;
-    
-    position: absolute;
-}
-
-.theme-third::after {
-    content: '145';
-    
-    font-family: OpenSans-Bold;
-    color: #b59f5b;
-    font-size: 12px;
-    
-    margin-left: 5px;
-    
-    position: absolute;
-}
-
-.theme-fourth::after {
-    content: '28';
-    
-    font-family: OpenSans-Bold;
-    color: #b59f5b;
-    font-size: 12px;
-    
-    margin-left: 5px;
-    
-    position: absolute;
-}
-
-.theme-fifth::after {
-    content: '62';
-
-    font-family: OpenSans-Bold;
-    color: #b59f5b;    
-    font-size: 12px;
-
-    margin-left: 5px;
-
-    position: absolute;
-}
-
-.theme-sixth::after {
-    content: '8';
-    
-    font-family: OpenSans-Bold;
-    color: #b59f5b;
-    font-size: 12px;
-    
-    margin-left: 5px;
-    
-    position: absolute;
+    text-decoration: none;
 }
 
 .shop {
     max-width: 1170px;
 
     margin-left: auto;
-    margin-right: auto;
-    
-    
+    margin-right: auto;    
 }
 
 .shop-header {
@@ -720,8 +653,8 @@ h3::after {
     font-family: OpenSans-Bold;
     font-size: 20px;
 
-    padding-top: 60px;
-    padding-bottom: 21px;
+    padding-top: 2px;
+    padding-bottom: 18px;
 
     position: relative;
 }
@@ -733,18 +666,17 @@ h3::after {
 
     position: absolute;
 
-    width: 70px;
-    height: 4px;
+    width: 5%;
+    height: 3px;
 
-    left: 46%;
-    top: 87%;
+    left: 47.5%;
+    top: 70%;
 
     background-color: #e1d9bd;
 }
 
 .products {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
     gap: 3.33%;    
@@ -759,24 +691,15 @@ h3::after {
     align-items: center;
 }
 
-.product-pic {
-    z-index: 0;
-
-    position: relative;
-
-    width: 300px;
-}
-
 .product-description {
     border: 3px solid #c2b78d;
-    padding: 45px 20px 10px 15px;
-    margin: -30px -16px 10px -16px;
+    padding: 47px 20px 25px 17px;
+    margin: -38px -16px 10px -16px;
 
     z-index: 1;
 
     position: relative;
-
-    min-height: 265px;
+    height: 265px;
 }
 
 .product-title {
@@ -838,6 +761,7 @@ h3::after {
     margin: 0;
 
     color: #ffff;
+    font-family: OpenSans-Bold;
     
     text-transform: uppercase;
     font-size: 14px;
@@ -870,6 +794,17 @@ h3::after {
     display: flex;
     gap: 27px;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
 
 .social-icon {
     display: block;
@@ -923,12 +858,15 @@ h3::after {
 .popup {
     position: fixed;
 
-    top: 239px;
+    top: 0;
 
     display: flex;
     justify-content: center;
 
     width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hidden {
@@ -939,21 +877,35 @@ h3::after {
     background-color: #ffff;
 
     width: 390px;
-    height: 588px;
+    max-height: 600px; 
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    padding: 54px 30px; 
+    margin-top: 100px;
+    position: relative;
+}
 
-    padding: 54px 30px;    
+.close {
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+    background-image: url("../svg/form-x.svg");
+    background-repeat: no-repeat;
+    top: -30px;
+    right: 0;
+    background-color: initial;
+    border: none;
+    cursor: pointer;
 }
 
 .popup-header {
     font-family: OpenSans-Bold;
     font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
 
     position: relative;
+    margin-bottom: 40px;
 }
 
 .popup-header::after {
@@ -963,12 +915,11 @@ h3::after {
 
     position: absolute;
 
-    width: 70px;
+    width: 20%;
+    left: 40%;
+    top: 130%;
 
-    font-size: 4px;
-
-    top: 150%;
-    margin-left: -20px;
+    height: 3px;
 
     background-color: #e1d9bd;
 }
@@ -977,7 +928,7 @@ h3::after {
     font-family: OpenSans-Regular;
     font-size: 13px;
 
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 5px;
 }
 
@@ -1011,7 +962,7 @@ h3::after {
     font-family: OpenSans-Regular;
     font-size: 13px;
 
-    margin-right: 20px;    
+    margin-right: 20px;   
 }
 
 .radio-text::before {
@@ -1073,35 +1024,35 @@ h3::after {
     cursor: pointer;
 }
 
-.close {
-    position: absolute;
-
-    font-size: 30px;
-
-    margin-top: -40px;
-    margin-right: -370px;
-
-    color: #ffff;
-}
-
-@media (min-width: 641px) and (max-width: 1200px) {
-    header {
+@media (min-width: 641px) and (max-width: 1199px) {
+    .header {
         background-image: url("../images/banner-bg-tablet.jpg");
-    }    
+        height: 392px;        
+    }
+
+    .header::before {
+        height: 392px;
+    }
 
     .menu {
         width: 100%;
-        margin-top: 43px;
+        margin-top: 17px;
         padding-left: 35px;
         padding-right: 35px;
     }
 
+    .logo {
+        width: 158px;
+    }
+
     .intro {
         max-width: 650px;
+        margin-top: 85px;
     }
 
     .intro-title {
         font-size: 40px;
+        line-height: 1.4;
     }
 
     .menu-list {    
@@ -1115,13 +1066,13 @@ h3::after {
     .menu-button {
         display: block;
 
-        width: 30px;
-        height: 15px;
+        width: 23px;
+        height: 10px;
 
         cursor: pointer;
 
-        border-top: 5px solid #ffff;
-        border-bottom: 5px solid #ffff;
+        border-top: 3px solid #ffff;
+        border-bottom: 3px solid #ffff;
 
         position: relative;    
     }
@@ -1133,10 +1084,23 @@ h3::after {
 
         position: absolute;
 
-        width: 30px;
-        height: 5px;
+        width: 23px;
+        height: 3px;
+
+        bottom: 280%;
 
         background-color: #ffff; 
+    }
+
+    .trends-header {
+        height: 99px;
+        font-size: 18px;
+        padding-top: 45px;
+    }
+
+    .trends-header::after {
+        width: 10%;
+        left: 45%;
     }
 
     .trend-list {
@@ -1144,29 +1108,43 @@ h3::after {
     }
 
     .trend {
-        width: 50%;
+        width: 49.9%;
+        height: 247px;
     }
 
-    main {
+    .trend::after {
+        height: 247px;
+    }
+
+    .trend-teg-item {
+        font-size: 14px;
+    }
+
+    .trend-title-link {
+        font-size: 17px;
+    }
+
+    .content {
         width: 100%;
         padding: 50px 35px;
     }
 
     .post-list {
-        width: 57%;
+        max-width: 56%;
     }
 
-    aside {
+    .aside {
         width: 272px;
+        flex-shrink: 1;
     }
 
     .article {
-        flex-direction: column;
+        display: block;
         border-bottom: 5px solid #eeeeee;
     }
 
     .article:nth-child(n+2) {
-        margin-top: 50px;
+        margin-top: -20px;
     }
 
     .article:last-child {
@@ -1179,14 +1157,23 @@ h3::after {
 
     .article-content {
         width: 100%;
+        margin-left: 0;
     }
 
     .article-category {
         margin-top: 10px;
     }
 
-    .shop-header {
-        padding-top: 0;
+    .article-about {
+        margin-bottom: 25px;
+    }
+
+    .article-text {
+        margin-bottom: 20px;
+    }
+
+    .break {
+        margin-top: -2%;
     }
 
     .trend-intro {
@@ -1195,7 +1182,6 @@ h3::after {
 
     .article-category-item, .trend-teg-item {
         font-size: 14px;
-
     }
 
     .article-caption {
@@ -1204,10 +1190,6 @@ h3::after {
 
     .article-text {
         font-size: 15px;
-    }
-
-    .shop-header {
-        font-size: 18px;
     }
 
     .section-title {
@@ -1219,24 +1201,53 @@ h3::after {
         padding: 0px 35px;
     }
 
+    .shop-header {
+        padding-top: 0;
+        font-size: 18px;
+        margin-top: -50px;
+    }
+
+    .shop-header::after {
+        width: 10%;
+        left: 45%;
+    }
+
     .products {
         flex-wrap: wrap;
     }
 
     .product-card {
         width: 48.3%;
+        margin-bottom: -15px;
     }
 
     .product-pic {
         width: 100%;
     }
 
+    .product-description {
+        height: 255px;
+    }
+
     .footer {
+        margin-top: 25px;
         width: 100%;
         padding: 35px;
     }
 
     .copyright {
         width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }    
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape){
+    .trend-list {
+        flex-wrap: nowrap;
+    }
+
+    .trend {
+        width: 25%;
+    }
 }
