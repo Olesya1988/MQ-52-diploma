@@ -19,8 +19,9 @@
     position: relative;
 
     width: 100%;
-    height: 28rem;
+    
     padding-top: 28px;
+    padding-bottom: 140px;
 
     background-image: url("../images/banner-bg.jpg");
     background-position: top left;
@@ -42,8 +43,9 @@
     position: absolute;
 
     width: 100%;
-    height: 28rem;
-    margin-top: -28px;
+    height: 100%;
+
+    margin-top: -28px;    
 
     background-color: rgba(0, 0, 0, 0.6);
     background-position: top left;
@@ -118,9 +120,9 @@
 
 .trends-header {
     position: relative;
-
-    height: 124px;
+    
     padding-top: 57px;
+    padding-bottom: 57px;
 
     text-transform: uppercase;
     font-family: OpenSans-Bold;
@@ -133,12 +135,10 @@
 
     display: block;
 
-    position: absolute;
-
     width: 4%;
     height: 3px;
-    left: 48%;
-    top: 75%;
+    margin: 10px auto;
+    
 
     background-color: #e1d9bd;
 }
@@ -154,7 +154,7 @@
 
 .trend {
     width: 24.85%;
-    height: 317px;
+    min-height: 317px;
     
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -177,7 +177,7 @@
     position: absolute;
 
     width: 100%;
-    height: 317px;
+    min-height: 317px;
 
     background-color: rgba(0, 0, 0, 0.6);
     background-position: top left;
@@ -211,11 +211,7 @@
     z-index: 2;
 
     font-size: 20px;
-    font-family: OpenSans-Bold;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    font-family: OpenSans-Bold;    
     
     max-width: 75%;
     margin-bottom: 4%;
@@ -270,8 +266,7 @@
 }
 
 .article-img {
-    width: 48.5%;
-    min-height: 18.38rem;
+    width: 48.5%;    
 
     object-fit: cover;
     object-position: top left;
@@ -290,17 +285,17 @@
     gap: 1.16rem;
 }
 
-.article-category-item, .trend-teg-item {
+.article-category-item:hover {
+    text-decoration: underline;
+    text-shadow: #b59f5b -0.3px 0;
+}
+
+.article-category-link, .trend-teg-item {
     font-family: OpenSans-Bold;
     font-size: 0.875rem;
     text-decoration: none;
     color: #b59f5b;
     text-transform: uppercase;
-}
-
-.article-category-item:hover {
-    text-decoration: underline;
-    text-shadow: #b59f5b -0.3px 0;
 }
 
 .article-title {
@@ -354,7 +349,8 @@
 }
 
 .aside {
-    width: 23%; 
+    width: 271px; 
+    margin-left: 10px;
 }
 
 .section {
@@ -482,29 +478,15 @@
     width: 49px;
     height: 49px;
 
-    cursor: pointer;      
-
-    visibility: hidden;      
-}
-
-.search-button::after {
-    position: absolute;
-    
-    content: '';
-      
-    width: 49px;
-    height: 49px;
-
     background-image: url("../svg/search.svg");
     background-color: #b59f5b;
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: center center;
-      
-    margin-top: -17px;
-    margin-left: -44px;
-      
-    visibility: visible;    
+
+    border: none;
+
+    cursor: pointer;       
 }
 
 .search-button:hover::after {
@@ -696,10 +678,8 @@
     padding: 47px 20px 25px 17px;
     margin: -38px -16px 10px -16px;
 
-    z-index: 1;
-
     position: relative;
-    height: 265px;
+    flex-grow: 1;
 }
 
 .product-title {
@@ -862,6 +842,7 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
 
     width: 100%;
     height: 100%;
@@ -870,18 +851,17 @@
 }
 
 .hidden {
-    display: none;
+   display: none;
 }
 
 .popup-box {
     background-color: #ffff;
 
-    width: 390px;
-    max-height: 600px; 
+    width: 390px; 
 
     padding: 54px 30px; 
-    margin-top: 100px;
-    position: relative;
+    
+    position: absolute;
 }
 
 .close {
@@ -954,6 +934,10 @@
     margin-bottom: 20px;
 }
 
+.frequency:focus {
+    border-bottom: 2px solid #ebe7d7;
+}
+
 .radio {
     display: none;
 }
@@ -1002,7 +986,7 @@
 }
 
 .content-answer:focus {
-    border: 1px solid #b59f5b;
+    border: 2px solid #b59f5b;
 }
 
 .feedback-button {
@@ -1024,14 +1008,17 @@
     cursor: pointer;
 }
 
+.feedback-button:hover {    
+    background-color: #92700a;
+}
+
 @media (min-width: 641px) and (max-width: 1199px) {
     .header {
-        background-image: url("../images/banner-bg-tablet.jpg");
-        height: 392px;        
+        background-image: url("../images/banner-bg-tablet.jpg");       
     }
 
     .header::before {
-        height: 392px;
+        height: 100%;
     }
 
     .menu {
@@ -1093,7 +1080,6 @@
     }
 
     .trends-header {
-        height: 99px;
         font-size: 18px;
         padding-top: 45px;
     }
@@ -1109,11 +1095,11 @@
 
     .trend {
         width: 49.9%;
-        height: 247px;
+        min-height: 247px;
     }
 
     .trend::after {
-        height: 247px;
+        min-height: 100%;
     }
 
     .trend-teg-item {
@@ -1219,10 +1205,6 @@
         width: 100%;
     }
 
-    .product-description {
-        height: 255px;
-    }
-
     .footer {
         margin-top: 25px;
         width: 100%;
@@ -1244,14 +1226,13 @@
 
 @media (max-width: 640px) {
     .header {
-        background-image: url("../images/banner-mobile.jpg");
-    
-        height: 959px;
-        padding: 0 60px;        
+        background-image: url("../images/banner-mobile.jpg");    
+        
+        padding: 0 60px 300px;        
     }
 
     .header::before {
-        height: 959px;
+        height: 100%;
         margin-top: 0;
     }    
 
@@ -1313,22 +1294,11 @@
 
     .trends-header {
         font-size: 24px;
-        height: 143px;
     }
 
-    .trends-header::after {
-        content: '';
-    
-        display: block;
-    
-        position: absolute;
-    
+    .trends-header::after {        
         width: 20%;
-        height: 4px;
-        left: 40%;
-        top: 100%;
-    
-        background-color: #e1d9bd;
+        height: 4px;      
     }
 
     .trend-list {
@@ -1337,11 +1307,11 @@
 
     .trend {
         width: 100%;
-        height: 348px;
+        min-height: 348px;
     }
 
     .trend::after {
-        height: 348px;
+        min-height: 348px;
     }
 
     .trend-intro {
@@ -1485,15 +1455,7 @@
     .search-button {
         width: 72px;
         height: 72px;
-    }
-    
-    .search-button::after {   
-        width: 72px;
-        height: 72px;
-    
-        margin-top: -27px;
-        margin-left: -60px;             
-    }
+    }    
 
     .sub {
         margin-top: 50px;
@@ -1572,10 +1534,6 @@
 
     .product-card {
         width: 100%;
-    }
-
-    .product-description {
-        height: 330px;
     }
 
     .product-title {

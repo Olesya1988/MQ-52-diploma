@@ -76,8 +76,8 @@
                 <div class="article-content">
                     <div class="article-category">
                         <ul class="article-category-list">
-                            <a href="#" class="article-category-item"><li>travel</li></a>
-                            <a href="#" class="article-category-item"><li>health</li></a>
+                            <li><a href="#" class="article-category-link">travel</a></li>
+                            <li><a href="#" class="article-category-link">health</a></li>
                         </ul>
                     </div>
                     <div class="article-title">
@@ -100,8 +100,8 @@
                 <div class="article-content">
                     <div class="article-category">
                         <ul class="article-category-list">
-                            <a href="#" class="article-category-item"><li>health</li></a>
-                            <a href="#" class="article-category-item"><li>lifestyle</li></a>
+                            <li><a href="#" class="article-category-link">health</a></li>
+                            <li><a href="#" class="article-category-link">lifestyle</a></li>
                         </ul>
                     </div>
                     <div class="article-title">
@@ -123,7 +123,7 @@
                 <div class="article-content">
                     <div class="article-category">
                         <ul class="article-category-list">
-                            <a href="#" class="article-category-item"><li>music</li></a>
+                            <li><a href="#" class="article-category-link">music</a></li>
                         </ul>
                     </div>
                     <div class="article-title">
@@ -145,8 +145,8 @@
                 <div class="article-content">
                     <div class="article-category">
                         <ul class="article-category-list">
-                            <a href="#" class="article-category-item"><li>lifestyle</li></a>
-                            <a href="#" class="article-category-item"><li>food</li></a>
+                            <li><a href="#" class="article-category-link">lifestyle</a></li>
+                            <li><a href="#" class="article-category-link">food</a></li>
                         </ul>
                     </div>
                     <div class="article-title">
@@ -167,9 +167,9 @@
                 <div class="article-content">
                     <div class="article-category">
                         <ul class="article-category-list">
-                            <a href="#" class="article-category-item"><li>lifestyle</li></a>
-                            <a href="#" class="article-category-item"><li>interior</li></a>
-                            <a href="#" class="article-category-item"><li>art</li></a>
+                            <li><a href="#" class="article-category-link">lifestyle</a></li>
+                            <li><a href="#" class="article-category-link">interior</a></li>
+                            <li><a href="#" class="article-category-link">art</a></li>                            
                         </ul>
                     </div>
                     <div class="article-title">
@@ -243,7 +243,7 @@
                 <form class="search-group">
                   <label class="search-group-field">
                     <span class="search-field-text">Поле для ввода ключевого слова поиска</span><input class="search-field" placeholder="Найти..." required>
-                  </label><button type="submit" class="search-button"><span class="search-button-text">Найти</span></button>
+                  </label><button type="submit" class="search-button"></button>
                 </form>
             </div> 
             <section class="section">
@@ -277,22 +277,22 @@
                 <div class="themes-group">
                     <ul class="themes">
                         <li class="theme">
-                            <a href="#" class="theme-text">Красота</a><a href="#" class="theme-number">12</a>
+                            <a href="#" class="theme-text">Красота</a><span class="theme-number">12</span>
                         </li>                    
                         <li class="theme">
-                            <a href="#" class="theme-text">Здоровье</a><a href="#" class="theme-number">4</a>
+                            <a href="#" class="theme-text">Здоровье</a><span class="theme-number">4</span>
                         </li>
                         <li class="theme">
-                            <a href="#" class="theme-text">Образ жизни</a><a href="#" class="theme-number">145</a>
+                            <a href="#" class="theme-text">Образ жизни</a><span class="theme-number">145</span>
                         </li>
                         <li class="theme">
-                            <a href="#" class="theme-text">Музыка</a><a href="#" class="theme-number">28</a>
+                            <a href="#" class="theme-text">Музыка</a><span class="theme-number">28</span>
                         </li>
                         <li class="theme">
-                            <a href="#" class="theme-text">Спорт</a><a href="#" class="theme-number">62</a>
+                            <a href="#" class="theme-text">Спорт</a><span class="theme-number">62</span>
                         </li>
                         <li class="theme">
-                            <a href="#" class="theme-text">Йога</a><a href="#" class="theme-number">8</a>
+                            <a href="#" class="theme-text">Йога</a><span class="theme-number">8</span>
                         </li>                        
                     </ul>
                 </div>
@@ -382,11 +382,11 @@
     </div>
     <div class="popup hidden">        
         <div class="popup-box">
-            <span class="visually-hidden">Кнопка закрытия окна</span><button type="submit" class="close"></button>
+            <button type="submit" class="close"><span class="visually-hidden">Кнопка закрытия окна</span></button>
             <h3 class="popup-header">ваш фидбек</h3>
             <form>
                 <p class="question">Как часто вы заходите на сайт?</p>
-                <span class="visually-hidden">Поле для выбора ответа</span><select class="frequency">
+                <select class="frequency">
                     <option>Почти каждый день</option>
                     <option>Раз в несколько дней</option>
                     <option>Раз в несколько недель</option>
@@ -394,16 +394,16 @@
                 </select>
                 <p class="question">Вы подписаны на e-mail рассылку?</p>
                 <label>                
-                    <span class="visually-hidden">Выбор ответа "Да"</span><input type="radio" name="answer" class="radio">
+                    <input type="radio" name="answer" class="radio">
                     <span class="radio-text">Да</span>
                 </label>
                 <label>                
                     <input type="radio" name="answer" class="radio">
-                    <span class="visually-hidden">Выбор ответа "Нет"</span><span class="radio-text">Нет</span>
+                    <span class="radio-text">Нет</span>
                 </label>
                 <p class="question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-                <span class="visually-hidden">Поле для ввода ответа</span><textarea type="text" class="content-answer" placeholder="Может, больше рецептов?"></textarea><br>
-                <span class="visually-hidden">Кнопка отправки обратной связи</span><button class="feedback-button" type="submit">отправить</button>
+                <textarea type="text" class="content-answer" placeholder="Может, больше рецептов?"></textarea><br>
+                <button class="feedback-button" type="submit">отправить</button>
             </form>
         </div>
     </div>
